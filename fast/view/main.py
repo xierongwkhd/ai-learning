@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
-from view.queryApi import query
+from view.QueryApi import query
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
